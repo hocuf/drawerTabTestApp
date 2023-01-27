@@ -3,21 +3,27 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     container: {
-        margin: 10,
-        color: 'black',
-    },
-    lable: {
-        fontSize: 15,
-        fontWeight: 'bold',
-        marginLeft: 5,
-        color: 'red',
-
+        flex: 1,
     },
     input_container: {
         borderWidth: 1,
-        margin: 1,
-        padding: 1,
-        borderRadius: 9,
-        borderColor : 'red',
+        borderColor: 'red',
+        borderRadius: 19,
+        backgroundColor: 'red',
+        width: 340,
+        color: 'white',
+        padding: 14,
+        height: 45,
+        margin: 2,
     },
+    text_container: {
+        fontWeight: 'bold',
+        color: 'white',
+        fontSize: 14,
+        padding:7,
+        marginBottom: 3,
+    },
+    for_text: {
+        color: 'white',
+    }
 });

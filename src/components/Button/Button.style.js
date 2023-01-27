@@ -1,15 +1,18 @@
 import { StyleSheet } from 'react-native';
 
+
 export default StyleSheet.create({
     container: {
         backgroundColor: 'red',
-        borderRadius: 5,
-        padding: 10,
-        margin: 10,
+        margin: 5,
+        padding: 5,
+        borderRadius: 19,
+        width: 250,
+        height: 45,
     },
     text: {
-        color: 'white',
-        fontWeight: 'bold',
         textAlign: 'center',
+        fontSize: 25,
+        color: 'white',
     },
 });

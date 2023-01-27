@@ -1,17 +1,22 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text,StyleSheet } from 'react-native';
 import Button from '../components/Button';
+
 
 function Welcome({navigation}) {
 
-    function goToMemberSign(){
-        navigation.navigate('MemberSignScreen');
+    function upToMemberSign(){
+        navigation.navigate("MemberSignScreen");
     }
 
-    return (
+    return(
         <View style={styles.container}>
-            <Text style={styles.header}>Kebab Fitness</Text>
-            <Button text="Click to Sign In" onPress={goToMemberSign} />
+            <View style={styles.textFull}>
+                <Text style={styles.textContainer1}>welcome</Text>
+                <Text style={styles.textContainer2}>baby</Text>
+                <Text style={styles.textContainer3}>you ready?</Text>
+            </View>
+            <Button text="ok, let's try!" onPress={upToMemberSign} />
         </View>
     );
 }
@@ -19,14 +24,25 @@ function Welcome({navigation}) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor: 'black',
         justifyContent: 'center',
+        alignItems: 'center',
     },
-    header: {
-        fontSize: 32,
-        fontWeight: 'bold',
-        color: 'black',
-        textAlign: 'center',
-        margin: 5,
+    textFull: {
+        alignItems: 'flex-start',
+        marginBottom: 75,
+    },
+    textContainer1: {
+        color: 'white',
+        fontSize: 60,
+    },
+    textContainer2: {
+        color: 'white',
+        fontSize: 45,
+    },
+    textContainer3: {
+        color: 'white',
+        fontSize: 25,
     },
 });
 
